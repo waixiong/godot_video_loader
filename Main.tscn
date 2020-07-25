@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Network.gd" type="Script" id=1]
+[ext_resource path="res://Local.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 1024.0
+margin_bottom = 768.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Local" type="Button" parent="Control"]
+margin_left = 316.0
+margin_top = 276.0
+margin_right = 716.0
+margin_bottom = 326.0
+text = "From Resources"
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Network" type="Button" parent="Control"]
+margin_left = 316.0
+margin_top = 374.0
+margin_right = 716.0
+margin_bottom = 424.0
+text = "From Network"
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

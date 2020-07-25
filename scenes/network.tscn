@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/BackButton.gd" type="Script" id=1]
+[ext_resource path="res://scenes/NetworkVideoPlayer.gd" type="Script" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="NetworkVideoPlayer" type="VideoPlayer" parent="Control"]
+margin_right = 1024.0
+margin_bottom = 600.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BackButton" type="Button" parent="Control"]
+margin_left = 30.0
+margin_top = 30.0
+margin_right = 110.0
+margin_bottom = 70.0
+text = "Back"
+script = ExtResource( 1 )
